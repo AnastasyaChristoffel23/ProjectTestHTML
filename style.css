@@ -1,116 +1,157 @@
-body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #cde7ff, #eaf6ff);
-    margin: 0;
+body{
+    margin:0;
+    font-family: 'Segoe UI', sans-serif;
+    background:#e57aa3;
 }
 
-/* Container utama */
-.container {
-    width: 70%;
-    margin: 40px auto;
-    background: #4da6ff;
-    padding: 35px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-    color: white;
-    transition: 0.3s;
+/* frame pink luar */
+.frame{
+    padding:40px;
 }
 
-.container:hover {
-    transform: scale(1.01);
+/* card utama */
+.cv{
+    background:#e9e3db;
+    border-radius:25px;
+    padding:30px;
+    border:3px solid black;
 }
 
-/* Header */
-header {
-    text-align: center;
-    margin-bottom: 25px;
+/* top bar */
+.topbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
 }
 
-header img {
-    width: 150px;
-    border-radius: 50%;
-    border: 5px solid white;
-    margin-bottom: 10px;
-    transition: 0.3s;
+.dots{
+    display:flex;
+    gap:8px;
 }
 
-header img:hover {
-    transform: rotate(3deg) scale(1.05);
+.dot{
+    width:14px;
+    height:14px;
+    border-radius:50%;
+    display:inline-block;
+    border:2px solid black;
 }
 
-h1 {
-    margin: 5px 0;
-    font-size: 32px;
-    letter-spacing: 1px;
+.red{background:#ff6b6b;}
+.yellow{background:#ffd93d;}
+.green{background:#6bcf63;}
+
+.title{
+    font-weight:bold;
+    font-size:14px;
 }
 
-/* Judul section */
-h2 {
-    color: white;
-    border-bottom: 2px solid rgba(255,255,255,0.6);
-    padding-bottom: 5px;
-    margin-top: 30px;
+/* profile */
+.profile{
+    display:flex;
+    align-items:center;
+    gap:30px;
+    margin-bottom:25px;
 }
 
-/* Section Card */
-section {
-    background: rgba(255,255,255,0.15);
-    padding: 15px 20px;
-    margin-top: 15px;
-    border-radius: 12px;
-    backdrop-filter: blur(5px);
-    transition: 0.3s;
+.photo img{
+    width:180px;
+    border-radius:25px;
+    border:4px solid black;
 }
 
-section:hover {
-    background: rgba(255,255,255,0.25);
+.info h1{
+    font-size:40px;
+    margin:0;
 }
 
-/* List */
-ul {
-    padding-left: 20px;
+.badge{
+    display:inline-block;
+    background:#39b54a;
+    padding:10px 25px;
+    border-radius:30px;
+    border:3px solid black;
+    margin-top:10px;
+    font-weight:bold;
+    color:white;
 }
 
-li {
-    margin: 8px 0;
+/* grid */
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
 }
 
-/* Paragraf */
-p {
-    line-height: 1.6;
+/* card */
+.card{
+    background:white;
+    padding:20px;
+    border-radius:20px;
+    border:3px solid black;
+    box-shadow:6px 6px 0 black;
+    margin-bottom:25px;
 }
 
-/* Garis pemisah halus */
-hr {
-    border: none;
-    height: 1px;
-    background: rgba(255,255,255,0.5);
-    margin: 20px 0;
+.card h3{
+    margin-top:0;
 }
 
-/* Link */
-a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+/* label colors */
+.pink{
+    background:#ff7aa2;
+    display:inline-block;
+    padding:6px 20px;
+    border-radius:20px;
+    border:3px solid black;
 }
 
-a:hover {
-    text-decoration: underline;
+.orange{
+    background:#ffa23a;
+    display:inline-block;
+    padding:6px 20px;
+    border-radius:20px;
+    border:3px solid black;
 }
 
-/* Responsive (HP) */
-@media (max-width: 768px) {
-    .container {
-        width: 90%;
-        padding: 20px;
-    }
+.green{
+    background:#39b54a;
+    color:white;
+    display:inline-block;
+    padding:6px 20px;
+    border-radius:20px;
+    border:3px solid black;
+}
 
-    h1 {
-        font-size: 24px;
-    }
+/* skills */
+.skill{
+    display:flex;
+    justify-content:space-between;
+    margin:10px 0;
+}
 
-    header img {
-        width: 120px;
+.dotskill span{
+    width:12px;
+    height:12px;
+    border-radius:50%;
+    border:2px solid black;
+    display:inline-block;
+    margin-left:4px;
+}
+
+.fill{
+    background:#ff7aa2;
+}
+
+/* contact */
+.contact{
+    font-size:14px;
+}
+
+/* responsive */
+@media(max-width:800px){
+    .grid{
+        grid-template-columns:1fr;
     }
 }
