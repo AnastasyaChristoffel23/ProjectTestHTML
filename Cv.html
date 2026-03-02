@@ -1,59 +1,127 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <title>CV Profil</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>CV Profile</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
+<div class="frame">
 
-    <header>
-        <img src="myimg.jpeg" alt="Foto Profil">
-        <h1>ANASTASYA DEBORA CHRISTOFFEL</h1>
-        <p>No HP: 085340428712</p>
-        <p>Email: christoffelanastasyadebora@email.com</p>
-    </header>
+    <div class="cv">
 
-    <section>
-        <h2>Tentang Saya</h2>
-        <p>Saya adalah, mahasiswa Politeknik Negeri Manado dengan jurusan Teknik Elektro program studi D4-Teknik Elektro.</p>
-    </section>
+        <!-- Header -->
+        <div class="topbar">
+            <div class="dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+            </div>
+            <div class="title">CURRICULUM VITAE</div>
+        </div>
 
-    <section>
-        <h2>Pendidikan</h2>
-        <ul>
-            <li>S1 Teknik Informatika — Politeknik Negeri Manado (2024–Sekarang)</li>
-            <li>SMK Negeri 1 — Multimedia (2021–2024)</li>
-        </ul>
-    </section>
+        <!-- Profile Section -->
+        <div class="profile">
 
-    <section>
-        <h2>Pengalaman Kerja / Magang</h2>
-        <ul>
-            <li>Magang Desainer photoshop — K3 Printing Minut (2024)</li>
-        </ul>
-    </section>
+            <div class="photo">
+                <img src="myimg.jpeg">
+            </div>
 
-    <section>
-        <h2>Hard Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>Python</li>
-            <li>Database MySQL</li>
-        </ul>
-    </section>
+            <div class="info">
+                <h1>ANASTASYA DEBORA CHRISTOFFEL</h1>
+                <span class="badge">POLITEKNIK NEGERI MANADO / TEKNIK ELEKTRO</span>
+            </div>
 
-    <section>
-        <h2>Soft Skills</h2>
-        <ul>
-            <li>Komunikasi</li>
-            <li>Problem Solving</li>
-            <li>Time Management</li>
-        </ul>
-    </section>
+        </div>
 
+        <!-- Content Grid -->
+        <div class="grid">
+
+            <!-- Left -->
+            <div>
+
+                <div class="card">
+                    <h3>My Profile</h3>
+                    <p>
+                        Saya adalah mahasiswa Politeknik Negeri Manado, 
+                        <br>jurusan teknik elektro program studi D4-Teknik Informatika semester 4.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3 class="green">Personal Skills</h3>
+
+                    <div class="skill">
+                        Creative
+                        <div class="dotskill">
+                            <span class="fill"></span>
+                            <span class="fill"></span>
+                            <span class="fill"></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        Teamwork
+                        <div class="dotskill">
+                            <span class="fill"></span>
+                            <span class="fill"></span>
+                            <span class="fill"></span>
+                            <span class="fill"></span>
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        Attitude
+                        <div class="dotskill">
+                            <span class="fill"></span>
+                            <span class="fill"></span>
+                            <span class="fill"></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="contact">
+                    <p>📞 085340428712</p>
+                    <p>✉ christoffelanastasyadebora@email.com</p>
+                    <p>🌐 website.com</p>
+                    <p>📍 Alamat Matungkas Kab. Minahasa Utara</p>
+                </div>
+
+            </div>
+
+            <!-- Right -->
+            <div>
+
+                <div class="card">
+                    <h3 class="pink">Education</h3>
+
+                    <b>SMK N1 Airmadidi</b>
+                    <p>Multimedia — 2021-2024</p>
+
+                    <b>Politeknik Negeri Manado</b>
+                    <p>Teknik Elektro — 2024-Sekarang</p>
+                </div>
+
+                <div class="card">
+                    <h3 class="orange">Work Experience</h3>
+
+                    <b>K3 Printing Minut</b>
+                    <p>Desain Photoshop — 2023</p>
+                    <p>Saya bekerja di bagian desain photoshop.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
 </div>
 
 </body>
